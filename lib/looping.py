@@ -3,23 +3,24 @@
 def happy_new_year():
     i = 10
     while i > 0:
-        print ("i")
-        i-= 0
-        print ("Happy New Year!")
-    pass
+        print (f"{i}")
+        i-=1
+    print ('Happy New Year!')   
+happy_new_year()
+      
+
 
 def square_integers(int_list):
-    
-    pass
+   lists=[i ** 2 for i in int_list ]
+   return lists
 
 def fizzbuzz():
-    for num in range(1, 101):
-        if num % 3 == 0 and num % 5 == 0:
+    for number in range(1, 101):
+        if number % 3 == 0 and number % 5 == 0:
             print("FizzBuzz")
-        elif num % 3 == 0:
+        elif number % 3 == 0:
             print("Fizz")
-        elif num % 5 == 0:
+        elif number % 5 == 0:
             print("Buzz")
         else:
-            print(num)
-    pass
+            print(number)
